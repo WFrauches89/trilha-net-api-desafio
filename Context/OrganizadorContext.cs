@@ -7,9 +7,14 @@ namespace TrilhaApiDesafio.Context
     {
         public OrganizadorContext(DbContextOptions<OrganizadorContext> options) : base(options)
         {
-            
+
         }
 
         public DbSet<Tarefa> Tarefas { get; set; }
+
+        internal object Find(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
